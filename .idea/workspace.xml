@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0944ee60-7c5f-4a59-b26d-06cb2f599a25" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1o8lBuRs4L4PRIK6tN7B4jmKAwe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -14,10 +27,77 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0944ee60-7c5f-4a59-b26d-06cb2f599a25" name="Default Changelist" comment="" />
+      <created>1612675965528</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612675965528</updated>
+      <workItem from="1612675966906" duration="277000" />
+    </task>
+    <task id="LOCAL-00001" summary="Iniciando Frontend">
+      <created>1612676060527</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612676060527</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Iniciando Frontend">
+      <created>1612676078963</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612676078963</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Iniciando Frontend">
+      <created>1612676086796</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612676086796</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Iniciando login">
+      <created>1612676115793</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612676115793</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Terminado login, iniciado create account">
+      <created>1612676174864</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1612676174864</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Arquitetura da autenticação jwt">
+      <created>1612676237915</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1612676237915</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Iniciando Frontend" />
+    <MESSAGE value="Iniciando login" />
+    <MESSAGE value="Terminado login, iniciado create account" />
+    <MESSAGE value="Arquitetura da autenticação jwt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arquitetura da autenticação jwt" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="23" width="810" height="777" key="CommitChangelistDialog2" timestamp="1612676174512">
+    <state x="0" y="23" width="810" height="777" key="CommitChangelistDialog2" timestamp="1612676237571">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" width="810" height="777" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1612676174512" />
+    <state x="0" y="23" width="810" height="777" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1612676237571" />
   </component>
 </project>
