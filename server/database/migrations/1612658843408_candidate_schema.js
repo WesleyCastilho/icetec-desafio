@@ -7,9 +7,9 @@ class CandidateSchema extends Schema {
   up () {
     this.create('candidates', (table) => {
       table.increments()
-      table.string('nome')
+      table.string('name')
       table.string('email')
-      table.string('birthday')
+      table.integer('age')
       table.string('linkedin')
       table.string('skills')
       table.timestamps()

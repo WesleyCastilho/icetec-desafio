@@ -6,81 +6,66 @@ const Candidate = use('App/Models/Candidate')
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
-/**
- * Resourceful controller for interacting with candidates
- */
 class CandidateController {
 
   async index ({ request, response, view }) {
-    const candidates = await Candidate.all()
-    if(candidates.lenght > 0){
+    try {
+      const candidates = await Candidate.all()
       return candidates
+    } catch (error) {
+      return response.status(401).send({ error: error });
     }
-    return 'Nao tem candidato cadastrado'
-    
   }
-
-  /**
-   * Render a form to be used for creating a new candidate.
-   * GET candidates/create
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   * @param {View} ctx.view
-   */
-
-
 
   async store ({ request, response }) {
-    return 'chegou aqui'
+     const data = request.all();
+    try {
+      const candidate = await Candidate.create(data);
+      return candidate;
+    } catch (error) {
+      if (error.code === "23505") {
+        return response.status(401).send({ error: "Usuário já cadastrado" });
+      }
+      return response.status(401).send({ error: error });
+    }
   }
 
-  /**
-   * Display a single candidate.
-   * GET candidates/:id
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   * @param {View} ctx.view
-   */
   async show ({ params, request, response, view }) {
-    const candidate = Candidate.findOrfail
+      try {
+      const candidate = await Candidate.findOrFail(params.id);
+      return candidate;
+    } catch (error) {
+      return response.status(400).send({ "Erro": "Não encontramos o candidato com o id informado, por favor verifique o id e tente novamente" });
+    }
   }
 
-  /**
-   * Render a form to update an existing candidate.
-   * GET candidates/:id/edit
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   * @param {View} ctx.view
-   */
-  async edit ({ params, request, response, view }) {
+  async update ({ params, request, response, view }) {
+     try {
+      const candidate = await Candidate.findOrFail(params.id);
+      const data = request.all();
+
+      candidate.merge(data);
+      
+      await candidate.save();
+      return candidate;
+    } catch (error) {
+      if (error.code === "23505") {
+        return response.status(401).send({ error: "Usuário já cadastrado" });
+      }
+      return response.status(401).send({ error: error });
+    }
   }
 
-  /**
-   * Update candidate details.
-   * PUT or PATCH candidates/:id
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   */
-  async update ({ params, request, response }) {
-  }
-
-  /**
-   * Delete a candidate with id.
-   * DELETE candidates/:id
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   */
-  async destroy ({ params, request, response }) {
+  async destroy({ params, auth, response }) {
+    try {
+      const candidate = await Candidate.findOrFail(params.id);
+      await candidate.delete();
+      return response
+        .status(401)
+        .send({ "Sucesso": "Usuário removido com sucesso" });
+    } catch (error) {
+      return response.status(401).send({ error: error });
+    }
   }
 }
 
