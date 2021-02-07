@@ -1,5 +1,7 @@
 'use strict'
 
+const Candidate = use('App/Models/Candidate')
+
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
@@ -8,16 +10,14 @@
  * Resourceful controller for interacting with candidates
  */
 class CandidateController {
-  /**
-   * Show a list of all candidates.
-   * GET candidates
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   * @param {View} ctx.view
-   */
+
   async index ({ request, response, view }) {
+    const candidates = await Candidate.all()
+    if(candidates.lenght > 0){
+      return candidates
+    }
+    return 'Nao tem candidato cadastrado'
+    
   }
 
   /**
@@ -29,18 +29,11 @@ class CandidateController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async create ({ request, response, view }) {
-  }
 
-  /**
-   * Create/save a new candidate.
-   * POST candidates
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   */
+
+
   async store ({ request, response }) {
+    return 'chegou aqui'
   }
 
   /**
@@ -53,6 +46,7 @@ class CandidateController {
    * @param {View} ctx.view
    */
   async show ({ params, request, response, view }) {
+    const candidate = Candidate.findOrfail
   }
 
   /**
