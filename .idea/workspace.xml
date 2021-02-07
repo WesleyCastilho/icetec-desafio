@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0944ee60-7c5f-4a59-b26d-06cb2f599a25" name="Default Changelist" comment="" />
+    <list default="true" id="0944ee60-7c5f-4a59-b26d-06cb2f599a25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env.example" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +41,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612675965528</updated>
-      <workItem from="1612675966906" duration="277000" />
+      <workItem from="1612675966906" duration="2695000" />
     </task>
     <task id="LOCAL-00001" summary="Iniciando Frontend">
       <created>1612676060527</created>
@@ -81,7 +85,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612676237915</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Corrigido rotas e telas de cadastro de devs... falta ajuste de salvar o select multiplo">
+      <created>1612676301383</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1612676301383</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Corrigido rotas e telas de cadastro de devs... falta ajuste de salvar o select multiplo">
+      <created>1612676319687</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1612676319687</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,12 +110,17 @@
     <MESSAGE value="Iniciando login" />
     <MESSAGE value="Terminado login, iniciado create account" />
     <MESSAGE value="Arquitetura da autenticação jwt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arquitetura da autenticação jwt" />
+    <MESSAGE value="Corrigido rotas e telas de cadastro de devs... falta ajuste de salvar o select multiplo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrigido rotas e telas de cadastro de devs... falta ajuste de salvar o select multiplo" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="23" width="810" height="777" key="CommitChangelistDialog2" timestamp="1612676301076">
+    <state x="0" y="23" width="810" height="777" key="CommitChangelistDialog2" timestamp="1612676319511">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" width="810" height="777" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1612676301076" />
+    <state x="0" y="23" width="810" height="777" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1612676319511" />
+    <state x="240" y="153" key="Vcs.Push.Dialog.v2" timestamp="1612676400120">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="240" y="153" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1612676400120" />
   </component>
 </project>
