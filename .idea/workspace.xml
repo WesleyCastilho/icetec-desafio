@@ -15,9 +15,9 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="23" width="810" height="777" key="CommitChangelistDialog2" timestamp="1612676086604">
+    <state x="0" y="23" width="810" height="777" key="CommitChangelistDialog2" timestamp="1612676115497">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" width="810" height="777" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1612676086604" />
+    <state x="0" y="23" width="810" height="777" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1612676115497" />
   </component>
 </project>
